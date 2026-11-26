@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laboratorio DFS — Cuatro nodos Ubuntu</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #101418; color: white; font-family: Ubuntu, sans-serif; overflow: hidden; }
+    header { height: 42px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; background: #20262c; }
+    header strong { color: #80ffdb; }
+    header span { color: #d7dde3; font-size: 14px; }
+    main { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 4px; height: calc(100vh - 42px); }
+    section { position: relative; min-width: 0; min-height: 0; border: 1px solid #46515b; }
+    h2 { position: absolute; z-index: 2; top: 6px; left: 6px; margin: 0; padding: 5px 9px; border-radius: 4px; background: rgba(10, 15, 20, .88); font-size: 14px; pointer-events: none; }
+    iframe { width: 100%; height: 100%; border: 0; background: #111; }
+  </style>
+</head>
+<body>
+  <header><strong>Laboratorio DFS — Ubuntu / Docker</strong><span>NameNode · DataNode A · DataNode B · Cliente</span></header>
+  <main>
+    <section><h2>PC 1 · NameNode · 10.10.0.1</h2><iframe src="http://127.0.0.1:3001/" title="NameNode"></iframe></section>
+    <section><h2>PC 2 · DataNode A · 10.10.0.2</h2><iframe src="http://127.0.0.1:3002/" title="DataNode A"></iframe></section>
+    <section><h2>PC 3 · DataNode B · 10.10.0.3</h2><iframe src="http://127.0.0.1:3003/" title="DataNode B"></iframe></section>
+    <section><h2>PC 4 · Cliente · 10.10.0.4</h2><iframe src="http://127.0.0.1:3004/" title="Cliente"></iframe></section>
+  </main>
+</body>
+</html>
